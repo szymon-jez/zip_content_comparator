@@ -1,0 +1,10 @@
+# -*- ruby -*-
+# configuration file for autotest from ZenTest
+
+#require 'test_notifier/runner/autotest' # gem install test_notifier
+begin
+  require 'test_notifier/autotest' # gem install test_notifier -v 0.1.4
+rescue LoadError
+  puts "Test Notifier (or a dependency) not available. Install it with: gem install test_notifier -v 0.1.4"
+end
+# Autotest::TestNotifier.preferred_notification_system = 'osd_cat'
