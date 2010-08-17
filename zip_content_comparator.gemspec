@@ -18,13 +18,13 @@ It uses MD5 to compare files.
   s.email = %q{szymon@jez.net.pl}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README"
+     "README.rdoc"
   ]
   s.files = [
     ".autotest",
      ".gitignore",
      "LICENSE",
-     "README",
+     "README.rdoc",
      "Rakefile",
      "VERSION",
      "lib/zip_content_comparator.rb",
