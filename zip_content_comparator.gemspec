@@ -20,11 +20,36 @@ It uses MD5 to compare files.
     "LICENSE",
      "README"
   ]
+  s.files = [
+    ".autotest",
+     ".gitignore",
+     "LICENSE",
+     "README",
+     "Rakefile",
+     "VERSION",
+     "lib/zip_content_comparator.rb",
+     "nbproject/project.properties",
+     "nbproject/project.xml",
+     "test/data/zip_content_comparator/identical_to_reference_test_file.zip",
+     "test/data/zip_content_comparator/modified_class_file.zip",
+     "test/data/zip_content_comparator/one_file_added.zip",
+     "test/data/zip_content_comparator/one_file_added_deleted_and_changed.zip",
+     "test/data/zip_content_comparator/one_file_changed.zip",
+     "test/data/zip_content_comparator/one_file_deleted.zip",
+     "test/data/zip_content_comparator/reference_test_file.zip",
+     "test/test_suite.rb",
+     "test/test_zip_content_comparator.rb",
+     "zip_content_comparator.gemspec"
+  ]
   s.homepage = %q{http://github.com/jeznet/zip_content_comparator}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{An utility for comparing content of ZIP files.}
+  s.test_files = [
+    "test/test_suite.rb",
+     "test/test_zip_content_comparator.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
