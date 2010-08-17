@@ -1,9 +1,10 @@
-== Zip File Content Comparator
+= Zip File Content Comparator
 An utility for comparing content of ZIP files.
 It does not extract the files anywhere, its's using instead ZIP::ZipFile class
-from RubyGem: rubyzip which enables to access ZIP files like a file system.
+from rubyzip gem which enables to access ZIP files like a file system.
 It uses MD5 to compare files.
 
+== Use Case
 It was written to compare JAR files to determine if it is necessary to
 deploy (upload) them to a Java Webstart directory. Specific files, which changed
 every build, contained in JAR files where ignored, which allowed to spot JAR files
@@ -12,7 +13,7 @@ end user some downloading and reduced the server load.
 
 For more info see documentation for #compare and #identical? methods.
 
-=== Example:
+== Example:
   # using the #compare method:
   identical_files, different_files = ZipContentComparator.compare('old_build/myapp.jar','new_build/myapp.jar')
   list_of_changed_class_files = different_files.detect{ |file| file =~ /.class$/ } || []
@@ -21,9 +22,9 @@ For more info see documentation for #compare and #identical? methods.
 
 See the source code if you want to use other methods of this class.
 
-Author:: Szymon (jeznet) Jeż <szymon@jez.net.pl>
+Author:: Szymon (jeznet) Jeż <szymon[at]jez[dot]net[dot]pl>
 
-=== Hints
+== Hints
 - To generate the documentation for this project use: rake rdoc
 - All test files which have real test should be included in the test_suite.rb file
 - The test_suite.rb is the default Test suite and is tested in `rake test` command
